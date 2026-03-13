@@ -1,0 +1,937 @@
+ /* ============================================================
+           GOOGLE FONTS IMPORT
+           ============================================================ */
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@600;700&family=El+Messiri:wght@400;500;600;700&display=swap');
+
+        /* ==================
+           RESET
+           ================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "El Messiri", Arial, sans-serif;
+            color: rgb(94, 10, 21) ;
+            background-color: #fff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ==================
+           NAVBAR
+           ================== */
+        .navbar {
+            background: rgb(188,129,53) !important;
+            box-shadow: none;
+            padding: 1.5rem 0;
+            border-bottom: none;
+            position: relative !important;
+            top: 0;
+            z-index: 1020;
+            transition: all 0.3s ease;
+        }
+
+        .logo {
+            width: 180px;
+            height: 60px;
+            background: url("./Quick-Look-Logo.png") center/contain no-repeat;
+        }
+
+        .nav-gap .nav-link {
+            margin: 0 18px;
+        }
+
+        .nav-link {
+            font-family: "El Messiri", sans-serif;
+            font-weight: 500;
+            font-size: 1.3rem;
+            color: rgb(94, 10, 21) !important;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #2D140C !important;
+        }
+
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search-input {
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 8px 14px;
+            border-radius: 6px;
+            width: 0;
+            opacity: 0;
+            transition: width 0.3s, opacity 0.3s;
+            outline: none;
+        }
+
+        .search-input.active {
+            width: 150px;
+            opacity: 1;
+        }
+        /* Shop Dropdown */
+.shop-dropdown {
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    margin-top: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.shop-dropdown .dropdown-item {
+    font-family: "El Messiri", sans-serif;
+    font-size: 1.1rem;
+    color: rgb(94, 10, 21);
+    padding: 10px 22px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.shop-dropdown .dropdown-item:hover {
+    background: rgba(255,255,255,0.25);
+    color: #2D140C;
+}
+
+/* Remove Bootstrap arrow styling conflict */
+.dropdown-toggle::after {
+    margin-left: 6px;
+}
+
+
+        /* ===========================
+           HERO SECTION (CAROUSEL)
+           =========================== */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .hero-section .carousel-item {
+            padding: 120px 0;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    .hero-slide-1 {
+    background:
+        url("./SLIDER-2-LEDDY-01.webp") right bottom / 40% no-repeat,
+        url("./SLIDER-3-PRD-01.webp") left bottom /35% no-repeat,
+        url("./slider-home-banner-03.webp") center / cover no-repeat;
+}
+
+.hero-slide-2 {
+    background:
+        url("./SLIDER-4-PRD-FINAL-01.webp") right / 50% no-repeat,
+        url("./QL-SLIDER-1-BACKGROUND-01.webp") center / cover no-repeat;
+}
+
+.hero-slide-3 {
+    background:
+        url("./Untitled-2-01.webp") right  / 50% no-repeat,
+        url("./QL-SLIDER-1-BACKGROUND-01.webp") center / cover no-repeat;
+}
+.hero-slide-2,
+.hero-slide-3 {
+    display: flex;
+    justify-content: flex-start;   /* move content to left */
+    align-items: center;
+    padding-left: 80px;            /* space from left edge */
+}
+
+.hero-slide-2 .hero-content,
+.hero-slide-3 .hero-content {
+    text-align: left;
+    margin-left: 0;
+}
+
+
+        .hero-section .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: fadeUp 1s ease;
+        }
+
+        .hero-subtitle {
+            font-family: "El Messiri", sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: rgb(94,10,21);
+            margin-bottom: 15px;
+        }
+
+        .hero-title {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 1.2;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary-custom {
+            font-family: "El Messiri", sans-serif;
+            background: #901717;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary-custom::after {
+            content: '→';
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #f09706;
+            color: #fff;
+            box-shadow: 0 5px 15px rgba(255,127,80,0.4);
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .carousel-fade .carousel-item {
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.6);
+        }
+
+        .carousel-indicators .active {
+            background-color: #ff7f50;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(255,127,80,0.8);
+            border-radius: 50%;
+            padding: 15px;
+        }
+
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            .btn-primary-custom {
+                padding: 10px 25px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ==================
+           SECTION TITLES
+           ================== */
+        .section-title {
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #000000;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* ==================
+           BEAUTY ESSENTIALS
+           ================== */
+        .category-card {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .category-card img {
+            width: 100%;
+            border-radius: 25px;
+            margin-bottom: 15px;
+            background-color: #fdf5ef;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        .category-card .img-default {
+            opacity: 1;
+        }
+
+        .category-card .img-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+
+        .category-card:hover .img-default {
+            opacity: 0;
+        }
+
+        .category-card:hover .img-hover {
+            opacity: 1;
+        }
+
+        .category-card h5 {
+            font-family: "Cormorant Garamond", serif;
+            font-weight: 500;
+            font-size: 250%;
+            color: #5E0A15;
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        /* ==================
+           TRENDING PRODUCTS
+           ================== */
+        /* Featured Product Styling */
+/* --- Featured Product Styling --- */
+.featured-product {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.product-info-overlay {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #5E0A15;
+    z-index: 2;
+}
+
+.product-info-overlay h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* --- Product Card Container --- */
+.product-card {
+    background: transparent;
+    border: none;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* --- Image Wrapper --- */
+.product-image-wrapper {
+    position: relative;
+    overflow: hidden; 
+    background-color: #ffffff;
+    border-radius: 4px;
+    aspect-ratio: 0 / 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;
+    transition: transform 0.5s ease;
+}
+
+/* ===============================
+   ADD TO CART SLIDE BAR (QuickLook exact feel)
+================================ */
+.add-to-cart-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px; /* slightly tighter like QuickLook */
+
+    background: #000;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'El Messiri', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+
+    transform: translateY(100%);
+    transition: transform 0.32s ease-out;
+    z-index: 5;
+}
+
+/* Slide up on hover */
+.product-card:hover .add-to-cart-overlay {
+    transform: translateY(0);
+}
+
+/* ===============================
+   ADD TO CART TEXT
+================================ */
+.add-to-cart-overlay span {
+    pointer-events: none;
+    line-height: 1;
+}
+
+/* ===============================
+   HEART ICON (QuickLook-style)
+================================ */
+.heart-icon {
+    position: absolute;
+    right: 10px;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    background: #fff;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    cursor: pointer;
+
+    opacity: 0;
+    transform: translateX(8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Heart fade-slide on hover */
+.product-card:hover .heart-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Clean hover (no flashy effect) */
+.heart-icon:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* --- Product Details & Price --- */
+.product-details {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.product-details h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #5E0A15;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-family: "El Messiri", sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #5E0A15;
+}
+
+/* --- View All Button --- */
+.view-all-container {
+    text-align: left;
+    margin-top: 10px;
+    padding-right: 450px;
+}
+
+.btn-view-all {
+    background-color: #5E0A15;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-family: "El Messiri", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.btn-view-all:hover {
+    background-color: #efa504;
+    color: #5E0A15;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(239, 165, 4, 0.3);
+}
+
+.btn-view-all::after {
+    content: " →";
+}       
+ /* ==================
+           OFFERS & DISCOUNTS
+           ================== */
+/* --- Offers Section Spacing --- */
+.offers-section .row {
+    display: flex;
+    justify-content: center;
+    /* This creates the exact space you saw in the image */
+    gap: 150px !important; 
+    margin: 0 auto;
+}
+
+/* --- Offer Card Styling --- */
+.offer-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px !important;
+    /* Matching the thin dark border from your image */
+    border: 1.5px solid #000000 !important; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+    cursor: pointer;
+    background-color: #f6e8d9; /* The cream color from your screenshot */
+    width: 100%;
+}
+
+.offer-card img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease !important;
+}
+
+/* --- Hover Effects --- */
+.offer-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.offer-card:hover img {
+    transform: scale(1.05) !important;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Fix for Bootstrap columns to allow the gap to work */
+.offers-section .col-md-4 {
+    width: 30% !important; /* Allows the 'gap' property to control spacing */
+    flex: 0 1 auto;
+}
+
+/* ===============================
+   SKINCARE TIPS – BLOG CAROUSEL
+================================ */
+
+/* Blog Card */
+#blogCarousel .blog-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+/* Blog Image */
+#blogCarousel .blog-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+/* Blog Title */
+#blogCarousel .blog-title {
+    margin-bottom: 18px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: rgb(112,41,41);
+}
+
+/* Blog Excerpt */
+#blogCarousel .blog-excerpt {
+    margin-top: 0;
+    padding-top: 16px;
+    font-family: "El Messiri", sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ===============================
+   CAROUSEL LAYOUT
+================================ */
+#blogCarousel {
+    position: relative;
+}
+
+/* Prevent arrows overlapping cards */
+#blogCarousel .carousel-inner {
+    padding: 0 80px;
+}
+
+/* ===============================
+   NAVIGATION ARROWS
+================================ */
+#blogCarousel .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 40px;
+    background: #f2f2f2;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 20;
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+#blogCarousel .nav-prev {
+    left: 15px;
+}
+
+#blogCarousel .nav-next {
+    right: 15px;
+}
+
+#blogCarousel .nav-btn i {
+    font-size: 14px;
+    color: #5E0A15;
+}
+
+/* Hover (no jump) */
+#blogCarousel .nav-btn:hover {
+    background: #ffffff;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    #blogCarousel .carousel-inner {
+        padding: 0 45px;
+    }
+}
+
+
+        /* ==================
+           WHY SHOP WITH US
+           ================== */
+        .why-shop-section {
+            background-color: #ffffff;
+            padding: 100px 0 0;
+            position: relative;
+            overflow: hidden;
+            min-height: 620px;
+        }
+
+        .why-shop-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: flex-start;
+            gap: 80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .why-shop-content {
+            flex: 1;
+            max-width: 600px;
+            padding-top: 10px;
+        }
+
+        .features-list {
+            display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 20px;
+        }
+
+        .features-list li {
+            font-family: "El Messiri", sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #2D140C;
+            position: relative;
+            text-align: right;
+        }
+        .no-marker {
+  list-style-type: none;
+}
+ul {
+  list-style-type: none;
+}
+
+
+        .features-list li::before {
+       content: '•';
+    position: absolute;
+    left: -10;
+    color: #5E0A15;
+    font-size: 1.5rem;
+    line-height: 1.5;
+        }
+
+        .why-shop-description {
+          font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-top: 30px;
+    text-align: justify;
+        }
+
+        .btn-rounded-brand {
+            background-color: #5E0A15;
+            color: #ffffff;
+            padding: 14px 36px;
+            border-radius: 50px;
+            border: none;
+            font-family: "El Messiri", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-rounded-brand:hover {
+            background-color: #f99806;
+            transform: translateY(-3px);
+        }
+
+      .why-shop-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    max-height: 560px;     /* keeps desktop size clean */
+    overflow: hidden;
+    z-index: 1;
+}
+
+.why-shop-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* perfect crop */
+    object-position: center bottom; /* face stays visible */
+    display: block;
+}
+
+
+        /* ==================
+           TESTIMONIALS
+           ================== */
+     .testimonial-card  {
+    background: rgb(255, 255, 255);
+    background-image: url('./quota-removebg-preview.png'); 
+    background-position: right bottom; 
+    background-repeat: no-repeat; 
+    background-size: 70px; 
+
+    border-radius: 12px;
+    padding: 40px 30px;
+    position: relative;
+    height: 105%;
+    min-height: 250px;
+    background-color: #fef6f0;
+     }
+
+        .testimonial-stars {
+            color: #c4790f;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .testimonial-text {
+            font-family: "El Messiri", sans-serif;
+            font-size: 19px;
+             color: #444;
+            margin-bottom: 30px;
+            text-align: left;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .testimonial-author-img {
+            width: 40px;
+            height: 40px;
+            background: #5E0A15;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .testimonial-author h6 {
+            font-family: "El Messiri", sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #5E0A15;
+            margin: 0;
+        }
+
+        .pre-footer-bg {
+    width: 100%;
+    height: 500px;
+    background:url("./footer-web-p-01.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -30px;
+}
+
+        /* ==================
+           FOOTER
+           ================== */
+        .footer {
+            background: #000000;
+            color: #e0d5cd;
+            padding: 80px 0 0;
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .footer-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .footer h5 {
+            font-family: "Cormorant Garamond", serif;
+            color: #c4790f;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            font-family: "El Messiri", sans-serif;
+            font-size: 0.9rem;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #c4790f;
+        }
+
+        .contact-info p {
+            font-size: 0.9rem;
+            color: #ffffff;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info i {
+            color: #c4790f;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #c4790f;
+            font-size: 1.1rem;
+        }
+
+        .copyright-bar {
+            background: #af6a0a;
+            color: #ffffff;
+            padding: 15px 0;
+            margin-top: 50px;
+            font-size: 0.85rem;
+        }
+
+        .copyright-bar p {
+            margin: 0;
+        }
