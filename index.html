@@ -1,0 +1,639 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Look</title>
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg sticky-top custom-navbar">
+    <div class="container">
+
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand logo">
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <!-- Center Menu -->
+         <ul class="navbar-nav mx-auto nav-gap">
+    <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+    </li>
+
+    <!-- Shop Dropdown -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#shop" id="shopDropdown" role="button" data-bs-toggle="dropdown">
+            Shop
+        </a>
+        <ul class="dropdown-menu shop-dropdown">
+            <li><a class="dropdown-item" href="#lotion">Lotion</a></li>
+            <li><a class="dropdown-item" href="#serum">Serum</a></li>
+            <li><a class="dropdown-item" href="#facewash">FaceWash</a></li>
+            <li><a class="dropdown-item" href="facesrcub">FaceSrcub</a></li>
+            <li><a class="dropdown-item" href="bodywash">BodyWash</a></li>
+            <li><a class="dropdown-item" href="shampoo">Shampoo</a></li>
+            <li><a class="dropdown-item" href="sunscreen">SunScreen</a></li>
+        </ul>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#blog">Blogs</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact Us</a>
+    </li>
+</ul>
+            <!-- Right Side -->
+            <div class="navbar-icons">
+                <input type="text" class="search-input" placeholder="Search..." />
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="far fa-heart"></i>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<section class="hero-section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active hero-slide-1">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col-lg-6 mx-auto hero-content">
+                            <p class="hero-subtitle"><strong>SOOTHING BLISS</strong></p>
+                            <h1 class="hero-title">
+                               <strong>Calm Your Senses,<br>
+                                Nourish Your Skin.</strong> 
+                            </h1>
+                            <a href="#shop" class="btn btn-primary-custom">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item hero-slide-2">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col-lg-6 mx-auto hero-content">
+                            <p class="hero-subtitle"><strong>NATURAL VITILITY</strong></p>
+                            <h1 class="hero-title">
+                                <strong>Ingredients,<br>
+                                Pure Glow.</strong> 
+                            </h1>
+                            <a href="#shop" class="btn btn-primary-custom">Explore Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item hero-slide-3">
+                <div class="container">
+                    <div class="row align-items-center text-center">
+                        <div class="col-lg-6 mx-auto hero-content">
+                            <p class="hero-subtitle"><strong>Essential PRODUCTS</strong> </p>
+                            <h1 class="hero-title">
+                                <strong>Glow Inside Out,<br>
+                               Shine Every Day.</strong> 
+                            </h1>
+                            <a href="#shop" class="btn btn-primary-custom">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</section>
+
+
+
+    <!-- Beauty Essentials -->
+ <section class="beauty-essentials py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Beauty Essentials</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="./Assets/Images/HAIR-WASH-GIRL-01.webp" class="img-default" alt="Shampoo">
+          <img src="./Assets/Images/QL-PRODUCT-BG-06-scaled.webp" class="img-hover" alt="Shampoo Hover">
+          <h5><b>Shampoo</b></h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="./Assets/Images/QL-Model-02-scaled.webp" class="img-default" alt="Lotions">
+          <img src="./Assets/Images/QL-PRODUCT-BG-04-scaled.webp" class="img-hover" alt="Lotions Hover">
+          <h5><b>Lotions</b></h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="./Assets/Images/QL-SERUM-01.webp" class="img-default" alt="Serums">
+          <img src="./Assets/Images/QL-PRODUCT-BG-03-scaled.webp" class="img-hover" alt="Serums Hover">
+          <h5><b>Serums</b></h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="./Assets/Images/QL-Model-04-scaled.webp" class="img-default" alt="Face Wash">
+          <img src="./Assets/Images/QL-PRODUCT-BG-02-scaled.webp" class="img-hover" alt="Face Wash Hover">
+          <h5><b>Face Wash</b></h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="./Assets/Images/QL-Model-05-scaled.webp" class="img-default" alt="Body Wash">
+          <img src="./Assets/Images/QL-PRODUCT-BG-05-scaled.webp" class="img-hover" alt="Body Wash Hover">
+          <h5><b>Body Wash</b></h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="category-card">
+          <img src="./Assets/Images/QL-Model-06-scaled.webp" class="img-default" alt="Sunscreen">
+          <img src="./Assets/Images/QL-PRODUCT-BG-01-scaled.webp" class="img-hover" alt="Sunscreen Hover">
+          <h5><b>Sunscreen</b></h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Trending Products -->
+<section class="trending-products py-5 bg-white">
+    <div class="container-fluid">
+        <h2 class="section-title text-center mb-5">Trending Products</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="featured-product">
+                    <img src="./Assets/Images/QL_TRENDING_PAGE-01-01.webp" alt="Featured Product" class="img-fluid">
+                    <div class="product-info-overlay">
+                        <h3>Empower Yourself</h3>
+                        <p>Get the skin you want to feel</p>
+                        <button class="btn-primary-custom">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="./Assets/Images/coconut-almond-cover-406x406.webp" alt="Product" class="img-fluid">
+                                <div class="add-to-cart-overlay">
+                                    <span class="cart-text">ADD TO CART</span>
+                                    <div class="heart-icon">
+                                        <span>♥</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <h4>Coconut & Almond Shampoo</h4>
+                                <div class="price">₹299.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="./Assets/Images/shikakai-reetha-shampoo-cover-406x406.webp" alt="Product" class="img-fluid">
+                                <div class="add-to-cart-overlay">
+                                    <span class="cart-text">ADD TO CART</span>
+                                    <div class="heart-icon">
+                                        <span>♥</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <h4>Shikakai & Reetha Shampoo - 400ml</h4>
+                                <div class="price">₹299.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="product-card">
+                            <div class="product-image-wrapper">
+                                <img src="./Assets/Images/QL-PRODUCT-BG-01-scaled.webp" alt="Product" class="img-fluid">
+                                <div class="add-to-cart-overlay">
+                                    <span class="cart-text">ADD TO CART</span>
+                                    <div class="heart-icon">
+                                        <span>♥</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <h4>Sunscreen SPF 50 for Ultimate Sun Protection</h4>
+                                <div class="price">₹359.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all-container mt-4 text-center">
+                    <a href="#" class="btn-view-all">View All Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Why Shop With Us -->
+     <h2 class="section-title text-center mb-5">Why Shop With Us?</h2>
+<section class="why-shop-section">
+    <div class="container-fluid">
+       <div class="why-shop-container">
+            <div class="why-shop-content">
+                <ul class="features-list ">
+                    <li>Crafted with Nature's Goodness</li>
+                    <li>No Harsh Chemicals</li>
+                    <li>Suitable for All Skin & Hair Types</li>
+                    <li>Eco-Conscious Packaging</li>
+                    <li>Tested for Quality & Safety</li>
+                    <li>Best Ratings and Reviews</li>
+                    <li>Made in India with Love</li>
+                    <li>24x7 Customer Support</li>
+                </ul>
+                
+                <p class="why-shop-description">
+                    We use natural, skin-loving constituents for safe and effective care. 
+                    Our products are free from sulfates, parabens, and toxins because 
+                    your skin deserves clean, conscious care.
+                </p>
+
+                <button class="btn-rounded-brand">Shop Now</button>
+            </div>
+
+            <div class="why-shop-image">
+                <img src="./Assets/Images/QL_WHY_SHOP-01.webp" alt="Skin Care Model">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="offers-section py-5 bg-white">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Ongoing Offers & Discounts</h2>
+        
+        <div class="row justify-content-center row-cols-1 row-cols-md-2 g-5">
+            
+            <div class="col-md-5">
+                <div class="offer-card">
+                    <img src="./Assets/Images/QL_SHOP-01-01-1.webp" alt="Offer">
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="offer-card">
+                    <img src="./Assets/Images/QL_SHOP-02-01-01-1.webp" alt="Offer">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Skincare Tips -->
+<section class="skincare-tips py-5 bg-white">
+  <div class="container position-relative">
+    <h2 class="section-title text-center mb-5">Skincare Tips</h2>
+
+    <!-- CAROUSEL -->
+    <div id="blogCarousel" class="carousel slide">
+
+      <!-- LEFT ARROW -->
+      <button type="button"
+              class="nav-btn nav-prev"
+              data-bs-target="#blogCarousel"
+              data-bs-slide="prev"
+              aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <!-- RIGHT ARROW -->
+      <button type="button"
+              class="nav-btn nav-next"
+              data-bs-target="#blogCarousel"
+              data-bs-slide="next"
+              aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- SLIDES -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+
+            <div class="col-11 col-md-4">
+              <div class="blog-card">
+                <img src="./Assets/Images/QL_BLOG_WEBP-01-770x273.webp" alt="">
+                <h3 class="blog-title">QuickLook De-Tan Face Scrub</h3>
+                <p class="blog-excerpt">
+                  Restore your natural radiance with gentle exfoliation.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-11 col-md-4">
+              <div class="blog-card">
+                <img src="./Assets/Images/QL_SUNSCREEN_BLOG-01-770x273.webp" alt="">
+                <h3 class="blog-title">Sunscreen SPF 50</h3>
+                <p class="blog-excerpt">
+                  Your everyday shield against sun damage.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-11 col-md-4">
+              <div class="blog-card">
+                <img src="./Assets/Images/QL_MANGO_LEAF_BLOG-01-770x273.webp" alt="">
+                <h3 class="blog-title">Mango Leaf Facewash</h3>
+                <p class="blog-excerpt">
+                  Gentle solution for daily cleansing.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+
+            <div class="col-11 col-md-4">
+              <div class="blog-card">
+                <img src="./Assets/Images/QL_BLOG_SERUM-01-770x273.webp" alt="">
+                <h3 class="blog-title">Kojic Acid Craze</h3>
+                <p class="blog-excerpt">
+                  Reduce pigmentation effectively.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-11 col-md-4">
+              <div class="blog-card">
+                <img src="./Assets/Images/QL_SKIN_CARE_BLOG-01-770x273.webp" alt="">
+                <h3 class="blog-title">Right Skincare Products</h3>
+                <p class="blog-excerpt">
+                  Choose what suits your skin.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-11 col-md-4">
+              <div class="blog-card">
+                <img src="./Assets/Images/FOAMING_FACE_WASH-01-01-01-770x273.webp" alt="">
+                <h3 class="blog-title">Vitamin C Foaming Wash</h3>
+                <p class="blog-excerpt">
+                  No water needed, perfect for travel.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="testimonials py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Testimonials</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        Quicklook's Sunscreen is light and smooth that protects the skin from the sun. It has a gentle scent and feels comfortable on the skin. It is easy to apply and works well under makeup.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h6>Bhavika Rokad</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        I've tried dozens of body washes, but this one truly stands out! The calming blend of lavender and chamomile creates a spa-like experience every time I shower. My skin feels incredibly soft.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h6>Shreya Khambe</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        The fragrance of Facewash is light and refreshing, with the subtle, natural scents of neem, aloe vera, and cucumber. It's soothing and not overpowering, making it perfect for daily use.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h6>Bhavika Patel</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★☆</div>
+                    <p class="testimonial-text">
+                        Absolutely love the coconut & almond shampoo! It leaves my hair feeling incredibly soft, shiny, and deeply nourished after every wash. It's become my go-to for manageable hair.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h6>Sanskruti Rawal</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        Great face wash! It's gentle, hydrating, and keeps my skin feeling refreshed all day. Will keep using! Highly recommend for anyone with sensitive skin looking for quality.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h6>Priyanka Raval</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        I used the anti acne facewash it is very good. It reduced my breakouts significantly within just two weeks of use. I am very happy with the results.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h6>Drashti Barvaliya</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <button class="btn-primary-custom" style="padding: 10px 30px; border-radius: 4px; text-transform: capitalize;">
+                View More
+            </button>
+        </div>
+    </div>
+</section>
+<section class="pre-footer-bg">
+    <div class="container-fluid">
+      
+    </div>
+</section>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="footer-logo">
+                    <img src="./Assets/Images/footer-logo-final.webp" alt="Logo" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col-lg-2 mb-4">
+                <h5>Menu</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 mb-4">
+                <h5>Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Lotion</a></li>
+                    <li><a href="#">Serum</a></li>
+                    <li><a href="#">Facewash</a></li>
+                    <li><a href="#">Bodywash</a></li>
+                    <li><a href="#">Shampoo</a></li>
+                    <li><a href="#">Sunscreen</a></li>
+                </ul>
+            </div>
+
+             <div class="col-lg-2 mb-4">
+                <h5>Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Payment Inquiry</a></li>
+                    <li><a href="#">Order Inquiry</a></li>
+                    <li><a href="#">Shipping Enquiries</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 mb-4">
+                <h5>Contact Us</h5>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Gotham City </p>
+                    <p><i class="fas fa-envelope"></i> info@quicklook.dev</p>
+                    <p><i class="fas fa-phone"></i> 909-926-8900</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-amazon"></i></a>
+                        <a href="#"><i class="fab fa-messo"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-bar">
+        <div class="container d-flex justify-content-between">
+            <p>Copyright © 2025 QuickLook. All Rights Reserved.</p>
+            <p>Developed By <strong>Het Jani</strong></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="././Assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
+</body>
+</html>
